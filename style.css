@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fefae0;
+  color: #283618;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #606c38;
+}
+
+.navbar > a {
+  margin-left: 30px;
+  margin-top: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #283618;
+}
+
+#aboutPage {
+  margin-left: auto;
+  padding-right: 30px;
+}
+
+header {
+  margin-top: 80px;
+  text-align: center;
+}
+
+header > p {
+  font-style: italic;
+}
+
+main{
+    width: 50%;
+    margin: auto;
+    background-color: #DDA15E;
+    padding: 10px;
+}
+
+/* Had help with the card styling from ChatGPT. */
+#cardContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #283618;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #606c38;
+}
+
+.cardImage{
+    max-width: 100%;
+    height: auto;
+}
+
+.cardText{
+    padding: 15px;
+}
