@@ -76,7 +76,7 @@ body {
 .nav-list > li > a {
   transition: 1s ease;
 }
-.nav-list > li a:hover{
+.nav-list > li a:hover {
   color: #dda15e;
 }
 
@@ -115,7 +115,7 @@ a {
 .sidebar-list > li > a {
   transition: 1s ease;
 }
-.sidebar-list > li a:hover{
+.sidebar-list > li a:hover {
   color: #dda15e;
 }
 
