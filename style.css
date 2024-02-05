@@ -85,6 +85,20 @@ main {
   text-align: center;
 }
 
+.btn-browse {
+  padding: 5px;
+  border: 1px inset black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn-browse:hover {
+  background-color: #fefae0;
+  box-shadow: 5px 5px 5px gray;
+  transform: translateY(-4px);
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -121,3 +135,4 @@ background: url('https://images.unsplash.com/photo-1553322396-0c9cd410975e?q=80&
 no-repeat center center;
 background-size: 100% auto;
 }
+
