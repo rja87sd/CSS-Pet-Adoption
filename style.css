@@ -97,6 +97,7 @@ main {
   background-color: #fefae0;
   box-shadow: 5px 5px 5px gray;
   transform: translateY(-4px);
+  animation: btnBrowseAnim 1.5s infinite;
 }
 
 footer {
@@ -136,3 +137,16 @@ no-repeat center center;
 background-size: 100% auto;
 }
 
+@keyframes btnBrowseAnim {
+  0% {
+    background-color: #606c38;
+  }
+
+  50% {
+    background-color: #dda15e;
+  }
+
+  100% {
+    background-color: #606c38;
+  }
+}
