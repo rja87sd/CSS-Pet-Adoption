@@ -1,7 +1,11 @@
+/* All CSS code contained herein was run through ChatGPT to organize and annotate */
+
+/* Reset default margin for all elements */
 * {
   margin: 0;
 }
 
+/* Grid layout areas */
 .header {
   grid-area: header;
 }
@@ -22,6 +26,7 @@
   grid-area: footer;
 }
 
+/* Grid container styles */
 .grid-container {
   height: 100vh;
   display: grid;
@@ -34,11 +39,13 @@
     "footer  footer footer footer";
 }
 
+/* Body styles */
 body {
   background-color: #fefae0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Header styles */
 .header {
   background-color: #606c38;
   padding-left: 10px;
@@ -48,14 +55,15 @@ body {
   align-items: center;
 }
 
+/* Header navigation styles */
 .header-nav {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
   color: #283618;
 }
 
+/* Navigation list styles */
 .nav-list {
   display: flex;
   flex-direction: row;
@@ -64,16 +72,27 @@ body {
   margin-left: auto;
 }
 
+/* Navbar list link animations */
+.nav-list > li > a {
+  transition: 1s ease;
+}
+.nav-list > li a:hover{
+  color: #dda15e;
+}
+
+/* List item styles */
 li {
   padding-left: 10px;
   font-weight: bold;
 }
 
+/* Anchor styles */
 a {
   color: #283618;
   text-decoration: none;
 }
 
+/* Sidebar styles */
 .sidebar {
   background-color: #606c38;
   height: 100%;
@@ -81,15 +100,26 @@ a {
   flex-direction: column;
 }
 
+/* Sidebar list styles */
 .sidebar-list {
   list-style: none;
   margin-top: 10px;
 }
 
+/* Sidebar list item styles */
 .sidebar-list > li {
   margin-bottom: 10px;
 }
 
+/* Sidebar list link animations */
+.sidebar-list > li > a {
+  transition: 1s ease;
+}
+.sidebar-list > li a:hover{
+  color: #dda15e;
+}
+
+/* Main content styles */
 main {
   background-color: #dda15e;
   color: #283618;
@@ -99,34 +129,35 @@ main {
   padding: 10px;
 }
 
-main > h1 {
-  padding: 10px;
-}
-
+/* Additional container styles */
 .row-container {
   display: flex;
   flex-direction: row;
   margin-top: 10px;
 }
 
+/* Text container styles */
 .text-container {
   display: flex;
   flex-direction: column;
   margin-right: 10px;
 }
 
+/* Pet image styles */
 .pet-img {
   max-width: 50%;
   height: auto;
   margin-right: 10px;
 }
 
+/* Aside styles */
 .aside {
   color: #283618;
   text-align: center;
   padding: 10px;
 }
 
+/* Footer styles */
 .footer {
   display: flex;
   align-items: center;
@@ -134,4 +165,70 @@ main > h1 {
   margin-bottom: 0;
   background-color: #606c38;
   color: #283618;
+}
+
+/* Media query for screens with a width of 600px or less */
+@media (max-width: 600px) {
+  /* Adjust grid layout for smaller screens */
+  .grid-container {
+    grid-template-rows: 75px 25px 1fr 50px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+  }
+
+  /* Reset padding and margin for header on smaller screens */
+  .header {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Adjust header navigation styles for smaller screens */
+  .header-nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Reset margin and padding for navigation list on smaller screens */
+  .nav-list {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  /* Adjust sidebar styles for smaller screens */
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+  }
+
+  /* Adjust sidebar list styles for smaller screens */
+  .sidebar-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+
+  /* Adjust sidebar list item styles for smaller screens */
+  .sidebar-list > li {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  /* Adjust pet image styles for smaller screens */
+  .pet-img {
+    width: auto;
+    height: 200px;
+  }
+
+  /* Hide aside on smaller screens */
+  .aside {
+    display: none;
+  }
 }
